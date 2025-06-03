@@ -24,7 +24,7 @@ const toDoList = {
   }
   },
   sort: function(){
-   this.task.sort((el,elSecond)=> el.priority - elSecond.priority)
+   this.task.sort((el,elSecond)=> el.priority - elSecond.priority).reverse()
   }
 }
 
@@ -34,12 +34,10 @@ toDoList.addTask(`Сходить в зал`, 2);
 toDoList.addTask(`Еще раз посмотреть материал по обьектам`, 10);
 toDoList.update(2,`ничего не делать`,3);
 toDoList.sort()
-console.log ()
-console.log ();
 
-console.log ();
-;
 
 console.log (toDoList.task)
+
+
 
 
